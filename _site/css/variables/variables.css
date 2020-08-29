@@ -1,0 +1,44 @@
+:root {
+  --font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-h1:        24px;
+  --font-size-h2:        20px;
+  --font-size-h3:        18px;
+  --font-size-h4:        16px;
+  --font-size-body:      14px;
+  --font-size-caption:   12px;
+
+  --font-weight-bold:    700;
+  --font-weight-regular: 500;
+
+  --line-height: 1.2;
+
+  --blue-300:  #2ED2FF;
+  --blue-500:  #00AAFF;
+  --blue-700:  #0F9BF0;
+
+  --white:     #FFF;
+  --black:     #000;
+  --grey-100:  #FAFAFA;
+  --grey-200:  #F8F9FB;
+  --grey-300:  #F1F2F4;
+  --grey-400:  #DEE3EB;
+  --grey-500:  #C9CED6;
+  --grey-600:  #A6AEBC;
+  --grey-700:  #8A94A6;
+  --grey-800:  #53627C;
+  --grey-900:  #364866;
+  --grey-1000: #0A1F44;
+
+  --spacing-xs:   4px;
+  --spacing-s:    8px;
+  --spacing-m:    12px;
+  --spacing-l:    20px;
+  --spacing-xl:   32px;
+  --spacing-xxl:  60px;
+
+  --container-max-width: 1440px;
+  --container-padding-x: var(--spacing-xl);
+
+  --border-light: var(--grey-300);
+  --border-dark: var(--grey-400);
+}
