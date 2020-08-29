@@ -1,15 +1,3 @@
-:root {
-  --grid-gutter: 32px;
-}
-
-
-.container {
-  --max-width: var(--container-max-width);
-  margin: auto;
-  max-width: var(--max-width);
-  padding: 0 var(--container-padding-x);
-}
-
 .grid {
   --columns: 1;
   display: grid;
@@ -17,7 +5,7 @@
   grid-template-columns: repeat(var(--columns), 1fr);
 }
 
-.grid--auto {
+.grid-auto {
   --min: 200px;
   --max: 1fr;
   display: grid;
@@ -35,14 +23,14 @@
 
 @media only screen and (max-width: 768px) {
   .grid {
-    --columns-tablet: var(--columns); 
+    --columns-tablet: var(--columns-tablet-landscape); 
     grid-template-columns: repeat(var(--columns-tablet), 1fr);
   }
 }
 
 @media only screen and (max-width: 568px) {
   .grid {
-    --columns-phone: var(--columns); 
+    --columns-phone: var(--columns-tablet); 
     grid-template-columns: repeat(var(--columns-phone), 1fr);
   }
 }

@@ -3,21 +3,35 @@ layout: grid
 ---
 
 <style>
-  .grid--auto > div,
-  .grid > div {
+  .grid-auto > div,
+  .grid > div,
+  .stack--row > div {
     background: red;
     height: 200px;
     opacity: 0.2;
   }
 </style>
 
-<div class="grid" style="--columns: 3; --columns-tablet: 2; --grid-gutter: 10px;">
+<div class="grid" style="--columns: 16; --columns-tablet-landscape: 3; --columns-tablet: 1;">
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
+  <div>Hello</div>
   <div>Hello</div>
   <div>Hello</div>
   <div>Hello</div>
 </div>
 
-<div class="grid--auto" style="--min: 400px; ">
+<div class="grid-auto" style="--min: 400px; ">
   <div>Hello</div>
   <div>Hello</div>
   <div>Hello</div>
@@ -28,9 +42,22 @@ layout: grid
   <div>Hello</div>
 </div>
 
-<div class="cwbr-container">
-  <div class="grid--auto" style="--min: 200px; ">
+<div class="container">
+  <div class="grid-auto" style="--min: 200px; ">
     <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div>Hello</div>
+  </div>
+</div>
+
+<div class="container" style="--max-width: 400px;">
+  <div class="stack--row stack--wrap" style="--min: 200px; ">
+    <div>Helloadsdasdsasda</div>
     <div>Hello</div>
     <div>Hello</div>
     <div>Hello</div>

@@ -1,0 +1,60 @@
+.stack--row {
+  --spacing: var(--spacing-s);
+  display: flex;
+  align-items: center;
+}
+
+.stack--row > * {
+  margin-right: var(--spacing);
+}
+
+.stack--row > :last-child {
+  margin-right: 0;
+}
+
+.stack--col {
+  --spacing: var(--spacing-s);
+  display: flex;
+  flex-direction: column;
+}
+
+.stack--col > * {
+  margin-bottom: var(--spacing);
+}
+
+.stack--row > :last-child {
+  margin-bottom: 0;
+}
+
+.stack--xs {
+  --spacing: var(--spacing-xs);
+}
+
+.stack--s {
+  --spacing: var(--spacing-s);
+}
+
+.stack--m {
+  --spacing: var(--spacing-m);
+}
+
+.stack--l {
+  --spacing: var(--spacing-l);
+}
+
+.stack--xl {
+  --spacing: var(--spacing-xl);
+}
+
+.stack--wrap {
+  flex-wrap: wrap;
+}
+
+.stack--wrap * {
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing);
+}
+
+.stack--wrap > :last-child {
+  margin-bottom: var(--spacing);
+}

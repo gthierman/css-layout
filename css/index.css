@@ -8,27 +8,14 @@
 @import 'variables/variables.css';
 @import 'components/container.css';
 @import 'components/grid.css';
+@import 'components/stack.css';
 * {
   box-sizing: border-box;
 }
 
-
-.docs {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-}
-
-.docs-nav__section {
-  margin-bottom: 20px;
-}
-
-.docs-nav a {
-  display: block;
-}
-
-
-* {
-  box-sizing: border-box;
+body, html {
+  padding: 0;
+  margin: 0;
 }
 
 body {

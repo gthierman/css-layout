@@ -38,6 +38,7 @@
 
   --container-max-width: 1440px;
   --container-padding-x: var(--spacing-xl);
+  --grid-gutter: 32px;
 
   --border-light: var(--grey-300);
   --border-dark: var(--grey-400);
