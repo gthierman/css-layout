@@ -1,0 +1,14 @@
+:root {
+  --font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-h1:        24px;
+  --font-size-h2:        20px;
+  --font-size-h3:        18px;
+  --font-size-h4:        16px;
+  --font-size-body:      14px;
+  --font-size-caption:   12px;
+
+  --font-weight-bold:    700;
+  --font-weight-regular: 500;
+
+  --line-height: 1.2;
+}

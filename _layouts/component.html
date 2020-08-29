@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign component = site.data.components.[page.data] %}
+<h1>
+  {{ component.name }}
+</h1>
+{% if component.status %}
+  {{component.status}}
+{% endif %}
+{% for example in component.examples %}
+  <div>
+    <h2>{{example.title}}</h2>
+    {{example.code}}
+    <code><pre>{{example.code | escape}}</pre></code>
+  </div>
+{% endfor %}
+
+{% if component.custom-props %}
+  <h5>Props</h5>
+  {% for prop in component.custom-props %}
+    <div>
+      {{prop.variable}}
+      {{prop.description}}
+    </div>
+    {{prop.code}}
+    <code><pre>{{prop.code | escape}}</pre></code>
+  {% endfor %}
+{% endif %}

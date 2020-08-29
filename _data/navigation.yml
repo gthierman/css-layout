@@ -1,0 +1,32 @@
+- title: Foundations 
+  pages: 
+    - title: Typography 
+      url: foundations/typography
+
+    - title: Colors
+      url: foundations/color
+
+    - title: Spacing
+      url: foundations/spacing
+
+- title: Forms
+  pages: 
+    - title: Button
+      url: components/button
+
+    - title: Text input
+      url: components/text-input
+    
+    - title: Label
+      url: components/label
+
+- title: Tables
+  pages: 
+    - title: Table
+      url: components/table
+
+- title: Grid
+  pages: 
+    - title: Grid
+      url: components/grid
+      

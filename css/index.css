@@ -1,0 +1,66 @@
+/* @import 'variables/color.css';
+@import 'variables/spacing.css';
+@import 'variables/typography.css'; */
+
+
+/* @import 'components/table.css'; */
+/* @import 'components/text-input.css'; */
+@import 'variables/variables.css';
+@import 'components/container.css';
+@import 'components/grid.css';
+* {
+  box-sizing: border-box;
+}
+
+
+.docs {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.docs-nav__section {
+  margin-bottom: 20px;
+}
+
+.docs-nav a {
+  display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4, h5, h6 {
+  font-size: var(--font-size-h4);
+}
+.cwbr-font-caption {
+  font-size: var(--font-size-caption);
+}
+
+a,
+.cwbr-link--primary,
+.cwbr-link--secondary  {
+  color: var(--blue-500);
+  text-decoration: underline;
+}
+

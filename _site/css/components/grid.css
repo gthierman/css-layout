@@ -1,0 +1,48 @@
+:root {
+  --grid-gutter: 32px;
+}
+
+
+.container {
+  --max-width: var(--container-max-width);
+  margin: auto;
+  max-width: var(--max-width);
+  padding: 0 var(--container-padding-x);
+}
+
+.grid {
+  --columns: 1;
+  display: grid;
+  grid-gap: var(--grid-gutter);
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.grid--auto {
+  --min: 200px;
+  --max: 1fr;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), var(--max)));
+  grid-gap: var(--grid-gutter);
+  grid-auto-rows: min-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    --columns-tablet-landscape: var(--columns); 
+    grid-template-columns: repeat(var(--columns-tablet-landscape), 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    --columns-tablet: var(--columns); 
+    grid-template-columns: repeat(var(--columns-tablet), 1fr);
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .grid {
+    --columns-phone: var(--columns); 
+    grid-template-columns: repeat(var(--columns-phone), 1fr);
+  }
+}

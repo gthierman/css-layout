@@ -1,0 +1,11 @@
+name: text input
+
+examples:
+  - title: Basic
+    code: <input class="cwbr-text-input" type="text">
+
+
+custom-props:
+  - variable: --max-width;
+    description: This variable does a thing.
+    code: '<input class="cwbr-text-input" type="text" style="--width: 200px;">'

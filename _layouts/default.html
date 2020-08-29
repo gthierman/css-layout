@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="docs">
+
+    <nav class="docs-nav">
+      {% for section in site.data.navigation %}
+        <div class="docs-nav__section">
+          <h5>{{section.title}}</h5>
+          {% for item in section.pages %}
+            <a href="{{baseurl}}/{{ item.url }}">{{ item.title }}</a>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </nav>
+    <main class="docs-main">
+      <div class="container">
+       {{content}}
+      </div>
+    </main>
+  </body>
+</html>

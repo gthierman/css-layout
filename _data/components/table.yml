@@ -1,0 +1,32 @@
+name: table
+
+examples:
+  - title: Basic table
+    code: | 
+      <table class="cwbr-table">
+        <thead>
+          <tr>
+            <th>Column 1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Column 1</td>
+          </tr>
+        </body>
+      </table>
+
+  - title: Striped table
+    code: | 
+      <table class="cwbr-table cwbr-table--striped">
+        <thead>
+          <tr>
+            <th>Column 1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Column 1</td>
+          </tr>
+        </body>
+      </table>

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>{{page.title}}</h1>
+
+{% for color in site.data.foundations.colors %}
+  <div class="color-swatch">
+    <div class="color-swatch__color" style="--color: var({{color.variable}});"></div>
+    {{color.variable}} {{color.hex}}
+  </div>
+{% endfor %}
